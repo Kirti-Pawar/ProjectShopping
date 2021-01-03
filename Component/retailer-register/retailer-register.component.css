@@ -1,0 +1,29 @@
+article
+    {
+    width:85%;
+    height:510px;
+    margin:0 auto;
+    margin-top:15px;
+    padding:5px;
+    background-color:white;
+    }
+    form{
+    height:100%;
+    width:25%;
+    margin:0 auto;
+    padding:20px;
+    }
+    
+   
+    input{
+    padding:10px 10px 10px 15px;
+    margin:5px 0;
+    border:1.5px solid lightgray;
+    width:100%;
+    border-radius:0.2px;
+    font-size:12px;
+    }
+    label{
+    font-family:helvetica;
+    color:#b32424;
+    }

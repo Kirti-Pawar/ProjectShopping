@@ -1,0 +1,32 @@
+<article>
+    <h4 style="text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-top:35px;color:#2e0c0c;font-size:30px">Retailer Registration</h4>
+    
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
+    
+    <label for="uname">Username</label><br>
+    
+    <input type="text" formControlName="Retailername" name="uname" id="uname" placeholder="Enter Username"><br>
+    
+        <span ><div *ngIf="submitted && f.Retailername.errors">
+            <div *ngIf="f.Retailername.errors.required">Username required</div>
+            <div *ngIf="f.Retailername.errors.pattern">Invalid Username</div></div></span>
+    <label for="pwd">Password</label><br>
+    
+    <input type="password" formControlName="Retailerpassword" name="pwd" id="pwd" placeholder="Enter Password"><br>
+    
+    <span ><div *ngIf="submitted && f.Retailerpassword.errors">
+        <div *ngIf="f.Retailerpassword.errors.required">Password required</div>
+        <div *ngIf="f.Retailerpassword.errors.pattern">Password Username</div></div></span>
+    
+    <label for="email">Email Address</label><br>
+    
+    <input type="email" formControlName="Retaileremail" name="email" id="email" placeholder="Enter Email Address"><br>
+    <div *ngIf="submitted && f.Retaileremail.errors" class="invalid-feedback">
+        <div *ngIf="f.Retaileremail.errors.required">Please enter the email</div>
+        </div>
+ 
+   
+    
+    <input type="submit"  name="register" id="register" value="Register" style="text-align:center;background-color:rgb(76, 76, 204);color:white;margin-top:10px">
+    </form>
+    </article>
